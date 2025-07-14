@@ -1,0 +1,12 @@
+{
+  "objects": [
+    {
+      "id": 1,
+      "label": 1234,
+      "firstSeenFrame": 0,
+      "lastSeenFrame": 42,
+      "box": { "x": -65.9, "y": 2323.4, "width": -1209.4, "height": 807.0 }
+    }
+  ],
+  "scene": "{}"
+}

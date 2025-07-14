@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="12dp"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:id="@+id/chatScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#111111"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="6dp"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:id="@+id/chatContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/contextStatusView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Context: None"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginBottom="6dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_marginBottom="6dp" />
+
+    <!-- Zeile 1: Modus / Clear / TTS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="4dp">
+
+        <Button
+            android:id="@+id/modeToggleButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:text="Mode: Detailed"
+            android:textSize="11sp"/>
+
+        <Button
+            android:id="@+id/clearSceneButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:text="Clear Scene"
+            android:layout_marginStart="4dp"
+            android:textSize="11sp"/>
+
+        <Button
+            android:id="@+id/ttsToggleButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:text="🔇 TTS: Off"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+    <!-- Neue Zeile: Source Toggle -->
+    <Button
+        android:id="@+id/sourceToggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Source: Local"
+        android:textSize="11sp"
+        android:layout_marginBottom="6dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="4dp">
+
+        <ImageButton
+            android:id="@+id/cameraButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_camera"
+            android:contentDescription="Camera" />
+
+        <ImageButton
+            android:id="@+id/videoButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_slideshow"
+            android:contentDescription="Select Video"
+            android:layout_marginStart="4dp" />
+
+        <ImageButton
+            android:id="@+id/jsonButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_upload"
+            android:contentDescription="Load JSON"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+    <!-- Zielobjekt-Feld -->
+    <EditText
+        android:id="@+id/targetObjectEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Target object (e.g. chair, dog)"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:background="#333333"
+        android:padding="12dp"
+        android:layout_marginBottom="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/inputField"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:hint="Enter your question..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:background="#333333"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Send"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+</LinearLayout>
