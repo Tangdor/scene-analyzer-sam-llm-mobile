@@ -74,6 +74,21 @@ This repository accompanies the Master's thesis:
 
 ---
 
+Of course, here is the requested section in markdown format.
+
+---
+
+## 🚀 Einrichtung & Modelle
+
+**Wichtiger Hinweis:** Die für die App benötigten KI-Modelle sind aus Lizenz- und Größengründen **nicht** in diesem Repository enthalten.
+
+Um die App nutzen zu können, müssen die Modelle manuell heruntergeladen und in das `assets`-Verzeichnis des Android-Projekts (`app/src/main/assets/`) kopiert werden.
+
+1.  **YOLOv8-seg (TFLite):** Das Modell zur Objekterkennung.
+2.  **Gemma (GGUF):** Das quantisierte Sprachmodell (z.B. Gemma 3B) für die Textgenerierung.
+
+Ohne diese Dateien im `assets`-Ordner kann die App nicht ausgeführt werden.
+
 ## 📜 License
 
 This repository is licensed under the **MIT License**.  
