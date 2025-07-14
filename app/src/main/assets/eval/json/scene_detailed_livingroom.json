@@ -1,0 +1,113 @@
+{
+  "objects": [
+    {
+      "id": 5,
+      "label": "chair",
+      "firstSeenFrame": 41,
+      "lastSeenFrame": 74,
+      "box": {
+        "x": 27.55479,
+        "y": 2591.8057,
+        "width": 51.321857,
+        "height": 304.09424
+      }
+    },
+    {
+      "id": 8,
+      "label": "person",
+      "firstSeenFrame": 59,
+      "lastSeenFrame": 61,
+      "box": {
+        "x": 1103.5555,
+        "y": 2202.8892,
+        "width": 1023.7313,
+        "height": 1610.2363
+      }
+    },
+    {
+      "id": 9,
+      "label": "backpack",
+      "firstSeenFrame": 63,
+      "lastSeenFrame": 76,
+      "box": {
+        "x": 1001.5466,
+        "y": 2343.0198,
+        "width": 734.65314,
+        "height": 1505.25
+      }
+    },
+    {
+      "id": 10,
+      "label": "suitcase",
+      "firstSeenFrame": 72,
+      "lastSeenFrame": 73,
+      "box": {
+        "x": 434.17386,
+        "y": 2474.6216,
+        "width": 716.719,
+        "height": 703.14746
+      }
+    },
+    {
+      "id": 2,
+      "label": "couch",
+      "firstSeenFrame": 0,
+      "lastSeenFrame": 33,
+      "box": {
+        "x": 19.329895,
+        "y": 2899.3096,
+        "width": -920.35986,
+        "height": -1964.5433
+      }
+    },
+    {
+      "id": 4,
+      "label": "chair",
+      "firstSeenFrame": 33,
+      "lastSeenFrame": 37,
+      "box": {
+        "x": 862.1573,
+        "y": 1993.8796,
+        "width": 1250.0044,
+        "height": 846.0669
+      }
+    },
+    {
+      "id": 1,
+      "label": "chair",
+      "firstSeenFrame": 0,
+      "lastSeenFrame": 42,
+      "box": {
+        "x": -65.91565,
+        "y": 2323.4468,
+        "width": -1209.4855,
+        "height": 807.0996
+      }
+    },
+    {
+      "id": 6,
+      "label": "tv",
+      "firstSeenFrame": 45,
+      "lastSeenFrame": 47,
+      "box": {
+        "x": 1122.8007,
+        "y": 1479.304,
+        "width": 927.17566,
+        "height": 1087.1572
+      }
+    },
+    {
+      "id": 3,
+      "label": "chair",
+      "firstSeenFrame": 25,
+      "lastSeenFrame": 57,
+      "box": {
+        "x": -929.75574,
+        "y": 2211.5474,
+        "width": 519.4845,
+        "height": 942.4663
+      }
+    }
+  ],
+  "scene": "{\"counts\":{\"chair\":4,\"person\":1,\"backpack\":1,\"suitcase\":1,\"couch\":1,\"tv\":1},\"positions\":{\"chair_1\":\"left\/bottom\",\"person_1\":\"right\/bottom\",\"backpack_1\":\"center\/bottom\",\"suitcase_1\":\"center\/bottom\",\"couch_1\":\"left\/middle\",\"chair_2\":\"right\/middle\",\"chair_3\":\"left\/bottom\",\"tv_1\":\"right\/middle\",\"chair_4\":\"left\/bottom\"},\"relations\":[\"There are 4 chairs mostly at left\/bottom\",\"There is a person mostly at right\/bottom\",\"There is a backpack mostly at center\/bottom\",\"There is a suitcase mostly at center\/bottom\",\"There is a couch mostly at left\/middle\",\"There is a tv mostly at right\/middle\"],\"total\":9}"
+}
