@@ -91,6 +91,23 @@ To use the app, you must manually download the models and place them in the `ass
 
 ⚠️ The app will not function without these model files present in the `assets` folder.
 
+## 📁 Additional Folders
+
+### `server-code/`
+
+This folder contains the source code for the two backend servers used in the project:
+
+- **YOLOE Server:** Handles prompt-free object detection using the YOLOE model.
+- **Gemma API Server:** Provides local or API-based access to the Gemma language model for inference.
+
+These components are required for full functionality of the app in scenarios where local processing is offloaded or enhanced via external services.
+
+### `eval-results/`
+
+This folder contains evaluation results in `.jsonl` format.
+
+Each file documents the output of specific test runs (e.g., segmentation accuracy, scene analysis quality, response latency) and serves as a basis for the system's quantitative and qualitative analysis.
+
 ## 📜 License
 
 This repository is licensed under the **MIT License**.  
