@@ -7,11 +7,11 @@ import android.util.Log
 import android.view.View
 
 /**
- * Datenklasse für erkannte Objekte als Bounding Box.
+ * Data class representing a detected object with a bounding box.
  *
- * @property label Klassenbezeichnung des Objekts
- * @property score Erkennungswahrscheinlichkeit (Confidence)
- * @property rect Position und Größe als Rechteck
+ * @property label The class label of the object.
+ * @property score The confidence score of the detection.
+ * @property rect The bounding rectangle of the object.
  */
 data class DetectionBox(
     val label: String,
@@ -20,11 +20,11 @@ data class DetectionBox(
 )
 
 /**
- * Datenklasse für erkannte Segmentmasken.
+ * Data class representing a detected segmentation mask.
  *
- * @property label Klassenbezeichnung des Objekts
- * @property score Erkennungswahrscheinlichkeit (Confidence)
- * @property points Liste von Punkten, die die Maske beschreiben
+ * @property label The class label of the object.
+ * @property score The confidence score of the detection.
+ * @property points List of polygon points outlining the mask shape.
  */
 data class DetectionMask(
     val label: String,
@@ -33,14 +33,14 @@ data class DetectionMask(
 )
 
 /**
- * View zum Darstellen von Bounding Boxes und Segmentmasken als Overlay.
+ * Custom view for drawing bounding boxes and segmentation masks as an overlay.
  */
 class OverlayView(context: Context, attrs: AttributeSet?) : View(context, attrs) {
 
-    /** Aktuelle Bounding Boxes */
+    /** Current list of bounding boxes. */
     var boxes: List<DetectionBox> = emptyList()
 
-    /** Aktuelle Segmentmasken */
+    /** Current list of segmentation masks. */
     var masks: List<DetectionMask> = emptyList()
 
     private val boxPaint = Paint().apply {
@@ -61,10 +61,10 @@ class OverlayView(context: Context, attrs: AttributeSet?) : View(context, attrs)
     }
 
     /**
-     * Aktualisiert die angezeigten Erkennungen und fordert ein Neuzeichnen an.
+     * Updates the list of detections and triggers a redraw.
      *
-     * @param newBoxes Neue Liste von Bounding Boxes
-     * @param newMasks Neue Liste von Segmentmasken
+     * @param newBoxes The new list of bounding boxes.
+     * @param newMasks The new list of segmentation masks.
      */
     fun updateDetections(newBoxes: List<DetectionBox>, newMasks: List<DetectionMask>) {
         boxes = newBoxes
@@ -74,9 +74,9 @@ class OverlayView(context: Context, attrs: AttributeSet?) : View(context, attrs)
     }
 
     /**
-     * Zeichnet die Bounding Boxes und Masken auf die Canvas.
+     * Draws all bounding boxes and masks on the canvas.
      *
-     * @param canvas Canvas zum Zeichnen
+     * @param canvas The canvas used for drawing.
      */
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
