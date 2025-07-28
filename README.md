@@ -78,16 +78,18 @@ Of course, here is the requested section in markdown format.
 
 ---
 
-## 🚀 Einrichtung & Modelle
+## 🚀 Setup & Models
 
-**Wichtiger Hinweis:** Die für die App benötigten KI-Modelle sind aus Lizenz- und Größengründen **nicht** in diesem Repository enthalten.
+**Important Note:** The AI models required for this app are **not** included in this repository due to licensing and file size limitations.
 
-Um die App nutzen zu können, müssen die Modelle manuell heruntergeladen und in das `assets`-Verzeichnis des Android-Projekts (`app/src/main/assets/`) kopiert werden.
+To use the app, you must manually download the models and place them in the `assets` directory of the Android project:
 
-1.  **YOLOv8-seg (TFLite):** Das Modell zur Objekterkennung.
-2.  **Gemma (GGUF):** Das quantisierte Sprachmodell (z.B. Gemma 3B) für die Textgenerierung.
+### Required Models
 
-Ohne diese Dateien im `assets`-Ordner kann die App nicht ausgeführt werden.
+1. **YOLOv8-seg (TFLite):** Used for object detection and segmentation.
+2. **Gemma (GGUF):** A quantized language model (e.g., Gemma 3B) used for text generation.
+
+⚠️ The app will not function without these model files present in the `assets` folder.
 
 ## 📜 License
 
