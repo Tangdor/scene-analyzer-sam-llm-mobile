@@ -115,7 +115,7 @@ You are free to use, modify, and distribute this software under the terms of the
 
 ---
 
-## 📎 Third-Party Licenses and Terms
+## Third-Party Licenses and Terms
 
 ### YOLO-seg (e.g., YOLOv8-seg)
 - License: **AGPL-3.0**
