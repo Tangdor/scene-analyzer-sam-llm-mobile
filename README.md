@@ -1,11 +1,11 @@
-# 📱 Scene Analyzer – SAM & LLM on Mobile
+# Scene Analyzer – SAM & LLM on Mobile
 
 **Prototype for mobile, multimodal scene analysis using lightweight segmentation and language models.**  
 This app enables local image/video analysis and scene interpretation using modular, offline-capable components.
 
 ---
 
-## 📘 Thesis Context
+## Thesis Context
 
 This repository accompanies the Master's thesis:
 
@@ -14,7 +14,7 @@ This repository accompanies the Master's thesis:
 
 ---
 
-## 🧠 Key Features
+## Key Features
 
 - **Fully modular CV → NLP pipeline**
 - **Runs fully offline on Android (YOLO-seg + quantized Gemma)**
@@ -31,7 +31,7 @@ This repository accompanies the Master's thesis:
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```text
 [Image/Video] 
@@ -44,7 +44,7 @@ This repository accompanies the Master's thesis:
 
 ---
 
-## 📂 JSON Format Example
+## JSON Format Example
 
 ```json
 {
@@ -64,7 +64,7 @@ This repository accompanies the Master's thesis:
 
 ---
 
-## 🛠 Requirements
+## Requirements
 
 - Android Studio (SDK ≥ 34)
 - Kotlin ≥ 1.8
@@ -78,7 +78,7 @@ Of course, here is the requested section in markdown format.
 
 ---
 
-## 🚀 Setup & Models
+## Setup & Models
 
 **Important Note:** The AI models required for this app are **not** included in this repository due to licensing and file size limitations.
 
@@ -89,9 +89,9 @@ To use the app, you must manually download the models and place them in the `ass
 1. **YOLOv8-seg (TFLite):** Used for object detection and segmentation.
 2. **Gemma (GGUF):** A quantized language model (e.g., Gemma 3B) used for text generation.
 
-⚠️ The app will not function without these model files present in the `assets` folder.
+The app will not function without these model files present in the `assets` folder.
 
-## 📁 Additional Folders
+## Additional Folders
 
 ### `server-code/`
 
@@ -108,7 +108,7 @@ This folder contains evaluation results in `.jsonl` format.
 
 Each file documents the output of specific test runs (e.g., segmentation accuracy, scene analysis quality, response latency) and serves as a basis for the system's quantitative and qualitative analysis.
 
-## 📜 License
+## License
 
 This repository is licensed under the **MIT License**.  
 You are free to use, modify, and distribute this software under the terms of the MIT license (see LICENSE file).
@@ -117,24 +117,24 @@ You are free to use, modify, and distribute this software under the terms of the
 
 ## 📎 Third-Party Licenses and Terms
 
-### 🔷 YOLO-seg (e.g., YOLOv8-seg)
+### YOLO-seg (e.g., YOLOv8-seg)
 - License: **AGPL-3.0**
 - Source: [https://github.com/ultralytics/ultralytics](https://github.com/ultralytics/ultralytics)
-- ⚠️ You **must** open-source your full codebase if you deploy this component in a public/remote service.
+- You **must** open-source your full codebase if you deploy this component in a public/remote service.
 
-### 🔷 YOLOE
+### YOLOE
 - License: **AGPL-3.0**
 - Notes: Server-only in this project; same requirements as above apply.
 
-### 🔷 Gemma 3B (Google)
+### Gemma 3B (Google)
 - License: **Gemma Terms of Use** (non-OSI, custom Google license)
 - Use restricted by the [Prohibited Use Policy](https://ai.google.dev/gemma/terms)
 - Redistribution or modification requires passing through the same terms
-- ⚠️ NOT permitted for illegal, exploitative, or harmful content generation
+- NOT permitted for illegal, exploitative, or harmful content generation
 
 ---
 
-## ✅ License Compatibility Summary
+## License Compatibility Summary
 
 | Component  | License      | Use in this Project         |
 |------------|--------------|-----------------------------|
@@ -145,13 +145,13 @@ You are free to use, modify, and distribute this software under the terms of the
 
 ---
 
-## 📄 LICENSE (MIT)
+## LICENSE (MIT)
 
 See `LICENSE` file in the repo root. Attribution required.
 
 ---
 
-## 🧾 Acknowledgements
+## Acknowledgements
 
 This work builds on the efforts of:
 - [Ultralytics](https://github.com/ultralytics) (YOLOv8)
